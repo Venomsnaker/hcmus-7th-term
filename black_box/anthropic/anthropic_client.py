@@ -1,7 +1,7 @@
 import anthropic
 
 class AnthropicClient:
-    def __init__(self, api_key: str, model: str = "claude-sonnet-4-20250514"):
+    def __init__(self, api_key, model: str = "claude-sonnet-4-20250514"):
         self.client = anthropic.Client(api_key=api_key)
         self.model = model
 
